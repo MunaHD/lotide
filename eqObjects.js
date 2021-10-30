@@ -14,7 +14,7 @@ const eqArrays = function (arr1, arr2){
     return false;
   }
 }
-const eqArrays = function(array1, array2) {
+const eqObjects = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   }
