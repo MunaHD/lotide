@@ -1,7 +1,15 @@
+const assert = require('chai').assert;
 const assertEqual = require('../assertEqual');
 
-// TEST CODE
-assertEqual("Bootcamp", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("happy", "Happy");// I guess its not like the === and it's like the ==
-assertEqual(1, 15);
+
+
+
+
+describe("#assertEqual", () => {
+  it("should return true  for 'Bootcamp', 'Bootcamp'", () => {
+    assert.strictEqual(assertEqual("Bootcamp", "Bootcamp"), true);
+  });
+  it("should return false for ['happy', 'Happy']", () => {
+    assert.strictEqual(assertEqual(["happy", "Happy"]), false); 
+  });
+});
