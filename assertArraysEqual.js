@@ -7,12 +7,12 @@ const assertArraysEqual = function (arr1, arr2){
   if (eqArrays(arr1, arr2)) {
     //if the test passes
     console.log(`✅✅✅ Assertion Passed: ${JSON.stringify(arr1)} === ${JSON.stringify(arr2)}`);
+    return true
   } else{
     //if the test fails
     console.log(`❌❌❌ Assertion Failed: ${JSON.stringify(arr1)} !== ${JSON.stringify(arr2)}`)
+    return false
   }
 }
-
-
 
 module.exports = assertArraysEqual;
