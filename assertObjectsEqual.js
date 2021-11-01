@@ -15,7 +15,7 @@ const assertObjectsEqual = function (obj1, obj2) {
   }
 }
 
-
+module.exports = assertObjectsEqual;
 
 //TEST
 
