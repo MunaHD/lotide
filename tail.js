@@ -1,17 +1,12 @@
-const assertEqual = function(actual, expected) {
-  if (actual  === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require("./assertEqual");// 1 dot because file is in folder
 
 const tail = function(array) {
+  // return on the conndition that: the array length is greater than 1.
+  // if true, it should return altered version of the array that contains the elements
+  // starting from the first index till the end
+  // if false, return an empty array
   return array.length > 1 ? array.slice(1) : [];
 };
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+module.exports = tail;
 
