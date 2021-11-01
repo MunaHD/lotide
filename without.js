@@ -19,13 +19,15 @@ const assertArraysEqual = function (arr1, arr2){
 const without = function (source, itemRem){
  
  
+  
+
+  // => OLD CODE BUT STILL WORKS JUST TRYING ANOTHER WAY //
   // filter array element and only return those 
   //that are not part of the other array
-
-  // => OLD CODE
+  
   // let newArr = source.filter(element => !itemRem.includes(element));
   // console.log(newArr);
-  //=> OLD CODE
+   // => OLD CODE BUT STILL WORKS JUST TRYING ANOTHER WAY //
   
   //create variable to hold the value of the item we want
   //to remove
@@ -52,19 +54,5 @@ const without = function (source, itemRem){
   
 }
 
-without([1, 2, 3], [2]);
-
-
 module.exports = without;
 
-// const words = ["hello", "world", "lighthouse"];
-// without(words, ["lighthouse"]); // no need to capture return value for this test case
-// // Make sure the original array was not altered by the without function
-// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
-
-
-
-// TEST CODE
-
-//assertArraysEqual([1, 2, 3], [1, 2, 3]); // => true
-//assertArraysEqual(["1", "2", "3"], ["1", "2", 3]) // => false
