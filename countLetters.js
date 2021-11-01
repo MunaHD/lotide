@@ -13,5 +13,7 @@ const countLetters = function(string) {
   return results;
 };
 
+
+module.exports = countLetters;
 //log the value to the screen
-console.log(countLetters("lighthouse in the house"));
+// console.log(countLetters("lighthouse in the house"));
