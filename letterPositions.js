@@ -13,11 +13,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-
-//log the value to the screen
-console.log(letterPositions("lighthouse in the house"));
-
-
-
-
-assertArraysEqual(letterPositions("hello").e, [1]);
+module.exports = letterPositions;
