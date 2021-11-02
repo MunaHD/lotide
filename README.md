@@ -26,10 +26,10 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-*  `function1(assertArraysEqual)` : description
+*  `function (assertArraysEqual)` : description
 
 
-*  `function (assertEqual)` : description
+*  `function (assertEqual)` : a series of success / failure messages printed to the console, letting us know if our functions are behaving as expected.
 
 
 *  `function (assertObjectsEqual)` : description
