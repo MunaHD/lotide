@@ -26,53 +26,52 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-*  `function (assertArraysEqual)` : description
+*  `function (assertArraysEqual)` : asserts whether or not the two given arrays are equal.
 
 
 *  `function (assertEqual)` : a series of success / failure messages printed to the console, letting us know if our functions are behaving as expected.
 
 
-*  `function (assertObjectsEqual)` : description
+*  `function (assertObjectsEqual)` : asserts whether or not the two given objects are equal.
 
 
-*  `function (countLetters)` : description
+*  `function (countLetters)` : Returns an object that's key: value pair are the letter and the number of times it appears.
 
 
-*  `function (countOnly)` : description
+*  `function (countOnly)` : Takes a object and list as parameter and returns the number of occurences for each item.
 
 
-*  `function (eqArrays)` : description
+*  `function (eqArrays)` : Tests whether two arrays are the same and returns true or false based on that.
 
 
-*  `function (eqObjects)` : description
+*  `function (eqObjects)` : Tests whether two objects are the same and returns true or false based on that.
+
+*  `function (findKey)` : Takes an object and callaback as parameter and returns the first key that matches.
 
 
-*  `function (findKey)` : description
+*  `function (findKeyByValue)` : Takes in object and value as a parameter and return the key that matches.
 
 
-*  `function (findKeyByValue)` : description
+*  `function (flatten)` : Takes in a nested array and returns a one level version of it with all the elements.
 
 
-*  `function (flatten)` : description
+*  `function (head)` : Returns the first element of an array.
 
 
-*  `function (head)` : description
+*  `function (letterPositions)` : it takes a string and returns an object that gives the letter and index as a key:value pair.
 
 
-*  `function (letterPositions)` : description
+*  `function (map)` : takes an array and callback as paramaters and returns an array that the callback changed.
 
 
-*  `function (map)` : description
+*  `function (middle)` :return the middle of a given array. if it is even it returns the two center elements.
 
 
-*  `function (middle)` : description
+*  `function (tail)` : takes an array as paramter and returns an array of elements excluding the first element.
 
 
-*  `function (tail)` : description
+*  `function (takeUntil)` : takes an array and callback, and returns alll elements until the condition is met.
 
 
-*  `function (takeUntil)` : description
-
-
-*  `function (withou)` : description
+*  `function (without)` : given an array and value it return an array without those values.
 
