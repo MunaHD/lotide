@@ -1,14 +1,21 @@
 
-const eqArrays = function (arr1, arr2){
-  // .every checks every value of the array to see if it passes the test which in this case
-  // looking at the 'value' in array1 and check if it is equal to the  'value' of array2 at the same index
-  if (arr1.every((val, index) => val === arr2[index])){
-    return true;
-  } else {
-  
+
+const eqArrays = function (arr1, arr2) {
+  if (arr1.length !== arr2.length) {
     return false;
   }
+  for (let i in arr1) {
+  if (Array.isArray(arr1[i]) && Array.isArray(arr2[i])) {
+    if (!eqArrays(arr1[i], arr2[i])) {
+      return false;
+    }
+  } else if (arr1[i] !== arr2[i]) {
+    return false
+  }
+}
+return true;
 }
 
-
 module.exports = eqArrays;
+
+
