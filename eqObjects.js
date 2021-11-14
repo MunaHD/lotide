@@ -4,21 +4,19 @@ const assertEqual = require("./assertEqual");
 
 
 const eqObjects = function(obj1, obj2) {
-  if (Object.keys(obj1).length !== Object.keys(obj2).length) {
+
+  let obj1Key  = Object.keys(obj1)
+  let obj2Key = Object.keys(obj2)
+
+  if (obj1Key.length !== obj2Key.length || Array.isArray(obj1) ||  Array.isArray(obj1)) {
     return false;
   }
 
-  for (let key in obj1) {
-    if (Object.keys(obj1[key]).length !== Object.keys(obj2[key]).length) {
-      return false;
-    }
-    if (Array.isArray(obj1[key]) &&  Array.isArray(obj2[key])) { 
-      
-      if (eqArrays(obj1[key], obj2[key]) === false) {
-        return false;
-      }
+  for (let val of obj1Key) {
+    if (typeof obj1[val] === 'object' || typeof obj2[val] === 'object' ) {
+      return eqObjects(obj1[val], obj2[val]);
 
-    } else if (obj1[key] !== obj2[key]) {
+    } else if (obj1[val] !== obj2[val]) {
       return false;
     }
   }
