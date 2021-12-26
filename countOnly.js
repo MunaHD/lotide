@@ -1,31 +1,14 @@
-
 const countOnly = function(allItems, itemsToCount) {
-
-  const results = {}
-
+  const results = {};
   for (const item of allItems) {
-
-    if (itemsToCount[item]) { 
-
-        !results[item] ? results[item] = 1 : results[item] += 1;
+    if (itemsToCount[item]) {
+      // if the item doesn't already exist create a key for it and assign 1
+      // otherwise increment by 1
+      !results[item] ? results[item] = 1 : results[item] += 1;
     }
   }
-
   return results;
-
-}
+};
 
 module.exports = countOnly;
-//TEST
-// const firstNames = [
-//   "Karl",
-//   "Salima",
-//   "Agouhanna",
-//   "Fang",
-//   "Kavith",
-//   "Jason",
-//   "Salima",
-//   "Fang",
-//   "Joe"
-// ]
-// const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+
