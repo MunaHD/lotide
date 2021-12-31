@@ -11,10 +11,10 @@ describe("#findKey", () => {
     "Ora":       { stars: 2 },
     "Akelarre":  { stars: 3 }
   };
-  it("should return the key of the passed in value", () => {
+  it("should return the first key that matches the callback function", () => {
     assert.strictEqual(findKey(test, x => x.stars === 2), "noma");
   });
-  it("should return undefined if the value passed isn't assigned to key", () => {
+  it("should return undefined if the callback doesnt find matching key", () => {
     assert.strictEqual(findKey(test,x => x.stars === 4), undefined);
   });
 });
