@@ -1,19 +1,15 @@
-const eqObjects = require('./eqObjects')
+const eqObjects = require('./eqObjects');
 
 
-
-
-
-
-const assertObjectsEqual = function (obj1, obj2) {
+const assertObjectsEqual = function(obj1, obj2) {
  
   if (eqObjects(obj1, obj2)) {
     //add JSON.strigify to show the full object (read into JSON more)
     console.log(`✅✅✅ Assertion Passed: ${JSON.stringify(obj1)} === ${JSON.stringify(obj2)}`);
   } else {
-    console.log(`❌❌❌ Assertion Failed: ${JSON.stringify(obj1)} !== ${JSON.stringify(obj2)}`)
+    console.log(`❌❌❌ Assertion Failed: ${JSON.stringify(obj1)} !== ${JSON.stringify(obj2)}`);
   }
-}
+};
 
 module.exports = assertObjectsEqual;
 
